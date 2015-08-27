@@ -14,7 +14,7 @@ If you haven't already, [create a GitHub account](http://github.com/signup) (or 
 
 ### You've Got Issues
 
-[Create an Issue in the assignments repo (this one)](../issues/new) and name it `00 -- Ready Steady Go -- YOUR NAME`, where `YOUR NAME` is, well... your name. Your real, full name. If you copy and paste the checklist from the **Tasks** sections below into the **Description** of your issue _as is_, you should end up with a bunch of checkboxes thanks to [the way that GitHub interprets text](https://guides.github.com/features/mastering-markdown/). As you complete parts of the assignment, check off the corresponding checkboxes and watch your progress bar fill! Read [Mastering Issues](https://guides.github.com/features/issues/) for more information on creating issues in GitHub.
+[Create an Issue in the assignments repo (this one)](https://github.com/tiyd-python-2015-08/assigments/issues/new) and name it `00 -- Ready Steady Go -- YOUR NAME`, where `YOUR NAME` is, well... your name. Your real, full name. If you copy and paste the checklist from the **Tasks** sections below into the **Description** of your issue _as is_, you should end up with a bunch of checkboxes thanks to [the way that GitHub interprets text](https://guides.github.com/features/mastering-markdown/). As you complete parts of the assignment, check off the corresponding checkboxes and watch your progress bar fill! Read [Mastering Issues](https://guides.github.com/features/issues/) for more information on creating issues in GitHub.
 
 _This task list should be complete by the first day of class!_
 
@@ -49,11 +49,6 @@ You might notice by now that GitHub does something funny with the text that you 
   * [ ] Name it `00 -- Ready Steady Go -- YOUR NAME` (where `YOUR NAME` is _your_ name)
   * [ ] Make this checklist the description
   * [ ] Start checking off boxes :astonished:
-* [ ] **Send all my GitHub to you...**
-  * [ ] [Complete the "Hello World" GitHub guide](https://guides.github.com/activities/hello-world/)
-  * [ ] Add a link to your new GitHub repo as a comment on your *WIP Issue*
-  * [ ] [Complete the "Forking Projects" GitHub guide](https://guides.github.com/activities/forking/)
-  * [ ] Add a link to your `Fork-and-Spoon` repo as a comment on your *WIP Issue*
 * [ ] **Brewmaster**
   * [ ] [Install Homebrew](http://brew.sh) on your Mac
     * [ ] Open `Terminal.app`; Don't Panic.
@@ -68,13 +63,24 @@ You might notice by now that GitHub does something funny with the text that you 
     * [ ] `wget`
     * [ ] `trash`
     * [ ] `bash-completion`
+  * [ ] Install pip and virtualenv by running the following commands:
+    * [ ] `sudo easy_install pip`
+    * [ ] `sudo pip install virtualenv`
+  * [ ] Install some helpful dotfiles with the following commands:
+    * [ ] `cd ~`
+    * [ ] `git clone https://github.com/tiyd-python-2015-08/dotfiles.git`
+    * [ ] `./dotfiles/bin/dfm install`
+    * [ ] Close your terminal window and re-open it - you should get a different command prompt!
   * [ ] Add the output of the following command as comments on your *WIP Issue*:
     * [ ] `which git && git --version`
-    * [ ] `which git && git --version`
-    * [ ] `which hub && hub --version`
-    * [ ] `which node && node --version`
+    * [ ] `which python3 && python3 --version`
   * [ ] Install the following (bonus if you use `brew`):
     * [ ] [Google Chrome](http://google.com/chrome)
     * [ ] [Atom](http://atom.io)
     * [ ] [Slack](http://www.slack.com)
+* [ ] **Send all my GitHub to you...**
+  * [ ] [Complete the "Hello World" GitHub guide](https://guides.github.com/activities/hello-world/)
+  * [ ] Add a link to your new GitHub repo as a comment on your *WIP Issue*
+  * [ ] [Complete the "Forking Projects" GitHub guide](https://guides.github.com/activities/forking/)
+  * [ ] Add a link to your forked `Spoon-Kinfe` repo as a comment on your *WIP Issue*
 ```
