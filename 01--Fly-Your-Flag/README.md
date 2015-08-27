@@ -1,9 +1,27 @@
 # 01 -- Fly Your Flag
 
+## Agenda
+
+* Intro to the Class
+  * Expectations
+    * Attendance
+    * Communication
+    * Ethics
+      * What is a safe place?
+      * What is cheating?
+      * How are we graded?
+  * Class vs Teacher schedule
+    * Start time 9am
+    * Instructor hours
+    * Homework due at 12:30am
+* Python Basics
+
+
+## Homework
+
 In this assignment, you'll use turtle(s) to draw a flag from a country you have lived in or visited or just plain think is cool.
 
-
-# Tasks
+### Tasks
 ```markdown
 * [ ] Code It
   * [ ] Draw a flag with one or more turtles
@@ -18,14 +36,14 @@ In this assignment, you'll use turtle(s) to draw a flag from a country you have 
   * [ ] Test your flag drawing at various sizes to ensure it works
 ```
 
-## Code It
+#### Code It
 
 Draw a flag. Use colors, fills, strokes, whatever to make it look cool.
 
-## Press the Issue
+#### Press the Issue
 
 Submit your trinket like we submitted assignment 00.
 
-## Hard mode
+#### Hard mode
 
 Put your flag drawing code in a function, and have that function take a parameter size that is used to change the size of the drawn flag. For example, canada(150) would draw the Canadian flag 150 pixels wide, while canada(30) would draw it only 30 pixels wide.
