@@ -12,15 +12,11 @@ If you're brand new to the Mac, you're probably already getting a bit confused b
 
 If you haven't already, [create a GitHub account](http://github.com/signup) (or use your existing one) and [edit your GitHub profile](https://github.com/settings/profile). Add a _recent, clear picture_ so we can recognize your face, _your full name_ so we can recognize your name, _a valid public email address_ so we can contact you. _Star the assignments repository_, if you haven't already.
 
-### You've Got Issues
+## You've Got Issues
 
 [Create an Issue in the assignments repo (this one)](https://github.com/tiyd-python-2015-08/assigments/issues/new) and name it `00 -- Ready Steady Go -- YOUR NAME`, where `YOUR NAME` is, well... your name. Your real, full name. If you copy and paste the checklist from the **Tasks** sections below into the **Description** of your issue _as is_, you should end up with a bunch of checkboxes thanks to [the way that GitHub interprets text](https://guides.github.com/features/mastering-markdown/). As you complete parts of the assignment, check off the corresponding checkboxes and watch your progress bar fill! Read [Mastering Issues](https://guides.github.com/features/issues/) for more information on creating issues in GitHub.
 
 _This task list should be complete by the first day of class!_
-
-### Send all my GitHub to you...
-
-Finally, if you haven't guessed it yet, GitHub is a tool we'll use very heavily in the class and is highly respected in the industry. Learn all you can about `git` -- the command -- and GitHub! There are [some helpful Guides on GitHub](http://guides.github.com) to help you get started, but start with [Hello World](https://guides.github.com/activities/hello-world/) and [Fork-and-Spoon](https://guides.github.com/activities/forking/)
 
 ## Command Line Training
 
@@ -30,11 +26,15 @@ In this class, we're going to use the Command Line Interface (CLI) _a lot_. Star
 
 Throughout the course, we'll be using a lot of tools, some of them on day 1. _Please have these installed on your Mac before we get started on Monday!_ If you have trouble, please put a comment on your WIP Issue and notify us via email. _Don't stop!_
 
+## Send all my GitHub to you...
+
+Finally, if you haven't guessed it yet, GitHub is a tool we'll use very heavily in the class and is highly respected in the industry. Learn all you can about `git` -- the command -- and GitHub! There are [some helpful Guides on GitHub](http://guides.github.com) to help you get started, but start with [Hello World](https://guides.github.com/activities/hello-world/) and [Forking Projects](https://guides.github.com/activities/forking/)
+
 ## Extracurricular Activities
 
 You might notice by now that GitHub does something funny with the text that you write. It's using a simple formatting system called [Markdown](http://daringfireball.net/projects/markdown/), and it adds a little of its own flavor. To learn more about Markdown and how GitHub uses it, check out [_Explaining Markdown_ on Team Treehouse](http://blog.teamtreehouse.com/explaining-markdown) and [_Mastering Markdown_ on in the GitHub Guides](https://guides.github.com/features/mastering-markdown/).
 
-## Tasks
+# Tasks
 
 ```markdown
 * [ ] **GitHubbing to know you**
