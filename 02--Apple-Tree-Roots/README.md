@@ -67,9 +67,6 @@ Enter a positive number: 20
 The square root of 20 is 4.472137791286727.
 ```
 
-Your program will be tested with the script `test.sh`. To run this script, run
-`brew install roundup` first.
-
 ## Normal Mode
 
 Newton's method of successive approximations says that whenever we have a guess
