@@ -18,7 +18,7 @@ The following is an example of the game of sticks.
 * Hal takes 3 sticks, there are 11 sticks remaining.
 * Marvin takes 2 sticks, there are 9 sticks remaining.
 * Hal takes 2 sticks, there are 7 sticks remaining.
-* Marvin takes 3 sticks, there are 4 sticks remaining.
+* Marvin takes 3 sticks, there are 4 sticks remaining.m
 * Hal takes 1 stick, there are 3 sticks remaining.
 * Marvin takes 2 sticks, there is 1 stick remaining.
 * Hal has to take the final stick and loses.
@@ -36,7 +36,7 @@ This assignment is split into four parts:
 ```markdown
 * [ ] Blank slate
   * [ ] Create a GitHub repo called `game-of-sticks`
-  * [ ] Put a `README.md` file in it and copy mystery_word.py and mystery_word_test.py from this repository into it.
+  * [ ] Put a `README.md` file in it and copy sticks.py and sticks_test.py from this repository into it.
 * [ ] Normal Mode
   * [ ] Player vs Player
     * [ ] Decide on the data structure(s) that you are going to need to use to represent the state of the game when played
