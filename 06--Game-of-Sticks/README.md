@@ -36,7 +36,7 @@ This assignment is split into four parts:
 ```markdown
 * [ ] Blank slate
   * [ ] Create a GitHub repo called `game-of-sticks`
-  * [ ] Put a `README.md` file in it and copy sticks.py and sticks_test.py from this repository into it.
+  * [ ] Put a `README.md` file in it and create sticks.py and sticks_test.py.
 * [ ] Normal Mode
   * [ ] Player vs Player
     * [ ] Decide on the data structure(s) that you are going to need to use to represent the state of the game when played
