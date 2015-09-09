@@ -50,8 +50,8 @@ After completing this assignment, you should be able to:
 
 * A Git repo called vectors-victor containing at least:
   * `README.md` file explaining how to run your project
-  * a module called `matrix_math`
-  * tests for `matrix_math`
+  * a module called `linear_algebra`
+  * tests for `linear_algebra`
 
 ### Requirements
 
@@ -78,7 +78,7 @@ Implement these additional linear algebra functions:
 * matrix multiplication by a vector
 * matrix multiplication by a matrix
 
-These functions are all defined in [the formulas notebook](Formulas.ipynb) included with this assignment as well as the [tests](test_matrix_math.py).
+These functions are all defined in [the formulas notebook](Formulas.ipynb) included with this assignment as well as the [tests](test_linear_algebra.py).
 
 These functions must:
 
