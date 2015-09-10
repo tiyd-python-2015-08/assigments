@@ -13,6 +13,7 @@ Use the MovieLens data to recommend movies to users.
 * [ ] Normal mode
   * [ ] Decide on the data structures that you're going to use to represent the information you'll need for this project
   * [ ] Create relevant classes
+  * [ ] Write test code for your classes
   * [ ] Load movie data using `csv` module
   * [ ] Write a program to recommend popular movies
   * [ ] Write a function to find similar users
@@ -61,7 +62,8 @@ suggest the following classes:
 Take a look at the MovieLens README file to determine what fields you should
 associate with each of these classes.
 
-Note that you will need to make associations between users and ratings, and ratings and movies.
+Note that you will need to make associations between users and ratings, and
+ratings and movies.
 
 Specifically, you will need to be able to:
 
@@ -69,6 +71,9 @@ Specifically, you will need to be able to:
 * Find the average rating for a movie by id
 * Find the name of a movie by id
 * Find all ratings for a user
+
+Write methods to handle the above use cases, and then write some tests and
+load in some test data to ensure they work.
 
 ### Step 2
 
