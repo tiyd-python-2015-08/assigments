@@ -34,6 +34,7 @@ Chart data about coin flips.
     * [ ] Compare the 1,000 flips per trial results to the 100 flips per trial results
 * [ ] Hard Mode
   * [ ] Use seaborn and clean up your Notebook file for presentation
+```
 
 ## Objectives
 
