@@ -1,0 +1,4 @@
+ipython[notebook]
+pandas
+matplotlib
+seaborn
