@@ -1,0 +1,5 @@
+reverseDependencies :: ModuleGraph -> M.Map ModuleName [ModuleName]
+reverseDependencies g = combine [ (dep, mn) | (mn, deps) <- g, dep <- deps ]
+  where
+  combine :: (Ord a) => [(a, b)] -> M.Map a [b]
+  combine = M.fromList . map ((fst . head) &&& map snd) . groupBy ((==) `on` fst) . sortBy (compare `on` fst)

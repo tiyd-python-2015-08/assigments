@@ -1,0 +1,35 @@
+proc isaac::mix {a b c d e f g h} {
+    set a [expr {($a ^ ($b << 11)) & 0xffffffff}]
+    set d [expr {($d + $a) & 0xffffffff}]
+    set b [expr {($b + $c) & 0xffffffff}]
+
+    set b [expr {($b ^ ($c >> 2)) & 0xffffffff}]
+    set e [expr {($e + $b) & 0xffffffff}]
+    set c [expr {($c + $d) & 0xffffffff}]
+
+    set c [expr {($c ^ ($d << 8)) & 0xffffffff}]
+    set f [expr {($f + $c) & 0xffffffff}]
+    set d [expr {($d + $e) & 0xffffffff}]
+
+    set d [expr {($d ^ ($e >> 16)) & 0xffffffff}]
+    set g [expr {($g + $d) & 0xffffffff}]
+    set e [expr {($e + $f) & 0xffffffff}]
+
+    set e [expr {($e ^ ($f << 10)) & 0xffffffff}]
+    set h [expr {($h + $e) & 0xffffffff}]
+    set f [expr {($f + $g) & 0xffffffff}]
+
+    set f [expr {($f ^ ($g >> 4)) & 0xffffffff}]
+    set a [expr {($a + $f) & 0xffffffff}]
+    set g [expr {($g + $h) & 0xffffffff}]
+
+    set g [expr {($g ^ ($h << 8)) & 0xffffffff}]
+    set b [expr {($b + $g) & 0xffffffff}]
+    set h [expr {($h + $a) & 0xffffffff}]
+
+    set h [expr {($h ^ ($a >> 9)) & 0xffffffff}]
+    set c [expr {($c + $h) & 0xffffffff}]
+    set a [expr {($a + $b) & 0xffffffff}]
+
+    return [list $a $b $c $d $e $f $g $h]
+}

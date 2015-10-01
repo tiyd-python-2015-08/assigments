@@ -1,0 +1,20 @@
+proc twitter::follow {nick uhost hand chan argv} {
+	if {![channel get $chan twitter]} { return }
+
+	if {[string length $argv] < 1} {
+		$twitter::output_cmd "PRIVMSG $chan :Usage: !follow <screen name>"
+		return
+	}
+
+	if {[catch {::twitlib::query $::twitlib::follow_url [list screen_name $argv]} result]} {
+		$twitter::output_cmd "PRIVMSG $chan :Twitter failed or already friends with $argv!"
+		return
+	}
+
+	if {[dict exists $result error]} {
+		twitter::output $chan "Follow failed ($argv): [dict get $result error]"
+		return
+	}
+
+	twitter::output $chan "Now following [dict get $result screen_name]!"
+}

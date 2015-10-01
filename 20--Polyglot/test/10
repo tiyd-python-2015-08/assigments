@@ -1,0 +1,14 @@
+var _ = require('lodash'),
+    fs = require('fs'),
+    yaml = require('js-yaml');
+
+function getDefaultSettings() {
+    return yaml.safeLoad(fs.readFileSync('defaults.yml', 'utf8'));
+}
+
+function getFileSettings() {
+    if (fs.existsSync('settings.yml')) {
+        return yaml.safeLoad(fs.readFileSync('settings.yml', 'utf8'));
+    }
+    return {};
+}

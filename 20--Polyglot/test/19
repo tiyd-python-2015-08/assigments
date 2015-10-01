@@ -1,0 +1,18 @@
+(define subst-f
+  (lambda (new old l)
+    (cond
+      ((null? l) '())
+      ((eq? (car l) old)
+       (cons new (cdr l)))
+      (else
+        (cons (car l) (subst new old (cdr l)))))))
+
+; The seqS function is what subst does that neither insertL nor insertR do
+;
+(define seqS
+  (lambda (new old l)
+    (cons new l)))
+
+; subst is now just (insret-g seqS)
+;
+(define subst (insert-g seqS))

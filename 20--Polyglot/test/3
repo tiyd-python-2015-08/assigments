@@ -1,0 +1,4 @@
+(extend-type String
+  Person
+  (first-name [s] (first (clojure.string/split s #" ")))
+  (last-name [s] (second (clojure.string/split s #" "))))

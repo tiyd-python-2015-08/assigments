@@ -1,0 +1,9 @@
+(ns my-cli.core)
+
+(defn -main [& args]
+  (println "My CLI received arguments:" args))
+
+(defn add-main [& args]
+  (->> (map #(Integer/parseInt %) args)
+       (reduce + 0)
+       (println "The sum is:")))

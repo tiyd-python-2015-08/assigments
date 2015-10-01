@@ -1,0 +1,11 @@
+  var r = riot.route = function(arg) {
+    // string
+    if (arg[0]) {
+      loc.hash = arg
+      emit(arg)
+
+    // function
+    } else {
+      fns.on('H', arg)
+    }
+  }

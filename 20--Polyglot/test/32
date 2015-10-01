@@ -1,0 +1,15 @@
+let search_compiler_libs () =
+  prerr_endline "I: Searching for OCaml compiler libraries";
+  let stdlib = BaseEnv.var_get "standard_library" in
+  let ( / ) = Filename.concat in
+  try
+    List.find (fun path -> Sys.file_exists (path / "types.cmi") || Sys.file_exists (path / "typing" / "types.cmi")) [
+      stdlib;
+      stdlib / "compiler-libs";
+      stdlib / "compiler-lib";
+      stdlib / ".." / "compiler-libs";
+      stdlib / ".." / "compiler-lib";
+    ]
+  with Not_found ->
+    prerr_endline "E: Cannot find compiler libraries! See the README for details.";
+    exit 1

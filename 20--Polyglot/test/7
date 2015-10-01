@@ -1,0 +1,15 @@
+class NoSuchService(Exception):
+    def __init__(self, name):
+        self.name = name
+        self.msg = "No such service: %s" % self.name
+
+    def __str__(self):
+        return self.msg
+
+
+class ConfigurationError(Exception):
+    def __init__(self, msg):
+        self.msg = msg
+
+    def __str__(self):
+        return self.msg
