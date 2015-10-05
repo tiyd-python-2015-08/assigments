@@ -14,7 +14,8 @@ Given screenshots of web pages (or parts of webpages), reproduce the look of eac
 * [ ] Hard mode
   * [ ] Create a pen for the GitHub repositories page
 * [ ] Nightmare mode
-  * [ ]
+  * [ ] Create a pen for the Surf and Paddle co. page
+```
 
 
 ## Objectives
