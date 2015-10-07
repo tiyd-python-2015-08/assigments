@@ -19,6 +19,14 @@ Create an interface in Django to the [MovieLens dataset][movielens].
   * [ ] Hard mode
     * [ ] Add methods to your models
     * [ ] Test your methods
+* [ ] Night 2
+  * [ ] Normal mode
+    * [ ] Create fixtures from your MovieLens dataset
+    * [ ] Top 20 movies view
+    * [ ] Movie detail view
+    * [ ] Rater detail view
+  * [ ] Hard mode
+    * [ ] Work on a recommendation algorithm, runnable via the shell
 ```
 
 
@@ -76,3 +84,19 @@ In order to do this, you'll want to [read up on the model layer of Django](https
 
 Try to test these new methods. Read [Testing in Django](https://docs.djangoproject.com/en/1.8/topics/testing/)
 and then either look at [django-nose](https://pypi.python.org/pypi/django-nose) or [pytest-django](https://pytest-django.readthedocs.org/en/latest/).
+
+## Night 2
+
+### Normal Mode
+
+Write function(s) that will create fixtures from your dataset. Load in your fixture data. _DO NOT COMMIT THE FIXTURES!!!_
+
+In your Django application, create views and templates for:
+
+* The top 20 movies rated. This list of movies should have their average rating, and each movie listed should have a link to its individual page.
+* Each individual movie. This page should have the movie, its average rating, and each person who rated it. The list of people should have the rating with each person and should have a link to that person's page.
+* Each individual user (rater). This page should have their demographic data, and a list of all movies they've rated, with the rating they gave it. Each movie listed should have the rating they gave it beside it and should have a link to that movie's page.
+
+### Hard Mode
+
+Try to build a recommendation algorithm inside your Django project, using the data from the database. Don't worry about incorporating it into a view yet - just test it out using the shell. We will be putting it into our Django project at some point.
