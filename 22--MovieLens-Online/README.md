@@ -27,6 +27,16 @@ Create an interface in Django to the [MovieLens dataset][movielens].
     * [ ] Rater detail view
   * [ ] Hard mode
     * [ ] Work on a recommendation algorithm, runnable via the shell
+* [ ] Night 3
+  * [ ] Normal mode
+    * [ ] Link Raters to Users
+    * [ ] Create fake data for Users
+    * [ ] Add registration, login, and logout to your project
+    * [ ] Add the ability for Users to rate movies
+  * [ ] Hard mode
+    * [ ] Add the ability for Users to edit their ratings
+    * [ ] Customize pages for logged-in users
+    * [ ] Add a logged-in user dashboard page
 ```
 
 
@@ -42,6 +52,23 @@ After completing this assignment, you should be able to...
 * Explain what a model is
 * Use the Django admin
 * Structure the Django admin to reflect your data
+
+### Night 2
+
+* Create regular expressions to map URLs to views
+* Explain what a view is
+* Explain what a template is
+* Design simple views
+* Use basic HTML
+* Extrapolate from basic HTML how to create templates
+
+### Night 3
+
+* Distinguish when to use GET vs POST
+* Create forms
+* Understand registration and login
+* Make use of Django's built in authentication forms and helper
+* Extend User objects via OneToOneFields
 
 ## Deliverables
 
@@ -70,20 +97,13 @@ Create Django admin pages for your models.
 
 ### Hard Mode
 
-Start adding methods to your models that you will need later. For `movie`,
-you'll want the average rating for each movie, and the ability to get the
-top movies by rating.
+Start adding methods to your models that you will need later. For `movie`, you'll want the average rating for each movie, and the ability to get the top movies by rating.
 
-For `rater`, you'll want the average rating that rater gave to a movie, and
-the ability to get the top movies that rater has not seen. You will also want
-to be able to find the Euclidean distance between that rater and another using
-their movie ratings. (See [our command-line version of this](https://github.com/tiyd-python-2015-05/movie-recommendations)
-to see more.)
+For `rater`, you'll want the average rating that rater gave to a movie, and the ability to get the top movies that rater has not seen. You will also want to be able to find the Euclidean distance between that rater and another using their movie ratings. (See [our command-line version of this](https://github.com/tiyd-python-2015-05/movie-recommendations) to see more.)
 
 In order to do this, you'll want to [read up on the model layer of Django](https://docs.djangoproject.com/en/1.8/#the-model-layer).
 
-Try to test these new methods. Read [Testing in Django](https://docs.djangoproject.com/en/1.8/topics/testing/)
-and then either look at [django-nose](https://pypi.python.org/pypi/django-nose) or [pytest-django](https://pytest-django.readthedocs.org/en/latest/).
+Try to test these new methods. Read [Testing in Django](https://docs.djangoproject.com/en/1.8/topics/testing/) and then either look at [django-nose](https://pypi.python.org/pypi/django-nose) or [pytest-django](https://pytest-django.readthedocs.org/en/latest/).
 
 ## Night 2
 
@@ -100,3 +120,22 @@ In your Django application, create views and templates for:
 ### Hard Mode
 
 Try to build a recommendation algorithm inside your Django project, using the data from the database. Don't worry about incorporating it into a view yet - just test it out using the shell. We will be putting it into our Django project at some point.
+
+
+## Night 3
+
+### Normal Mode
+
+Link your Rater model to the built-in User model via a OneToOneField. Create a username, email, and password for all raters.
+
+Add registration, login, and logout to your application.
+
+Add the ability for a user to rate a movie they have not previously rated from the movie page.
+
+### Hard Mode
+
+Add the ability for a user to edit a rating they've made.
+
+When logged in, customize pages for the user. For example, on the page that shows the top 20 movies rated, show the user which ones they've rated.
+
+Add a personal page for each user that only they can see. It should have all their ratings, allow them to edit or delete those ratings, and also show them the top 20 movies they have not rated.
