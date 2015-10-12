@@ -37,6 +37,23 @@ Create an interface in Django to the [MovieLens dataset][movielens].
     * [ ] Add the ability for Users to edit their ratings
     * [ ] Customize pages for logged-in users
     * [ ] Add a logged-in user dashboard page
+* [ ] Night 4
+  * [ ] Normal mode
+    * [ ] Ensure users can rate movies.
+    * [ ] Validate that new ratings are between 1 and 5.
+    * [ ] Make sure new ratings are timestamped correctly.
+    * [ ] Allow for a short review with the rating.
+    * [ ] Add a personal page for each user that only they can see. It should have all
+    their ratings and allow them to edit or delete those ratings.
+    * [ ] Add a public page for each user that has all their ratings and their
+    user info.
+    * [ ] Movies should have genres, and each genre should have a page where you can
+    see the top rated movies for that genre.
+    * [ ] Have a page both for showing movies with the most ratings and movies with the highest ratings.
+  * [ ] Hard mode
+    * [ ] Convert your application to use PostgreSQL.
+    * [ ] Add features based off what you're interested in.
+
 ```
 
 
@@ -69,6 +86,16 @@ After completing this assignment, you should be able to...
 * Understand registration and login
 * Make use of Django's built in authentication forms and helper
 * Extend User objects via OneToOneFields
+
+## Night 4
+
+* Expand upon current knowledge to build new Django applications and features
+* Determine which model field types to use to represent data
+* Understand the difference between 1:1, 1:n, and n:n relationships
+* Distinguish when to use each relationship type in modeling data
+* Translate English descriptions of data queries into Django ORM queries
+* Use PostgreSQL to store Django data
+* Use django-extensions to make development easier
 
 ## Deliverables
 
@@ -139,3 +166,29 @@ Add the ability for a user to edit a rating they've made.
 When logged in, customize pages for the user. For example, on the page that shows the top 20 movies rated, show the user which ones they've rated.
 
 Add a personal page for each user that only they can see. It should have all their ratings, allow them to edit or delete those ratings, and also show them the top 20 movies they have not rated.
+
+## Night 4
+
+### Normal Mode
+
+Tonight focuses on using the Django ORM better. You have a list of changes
+to make:
+
+* Ensure users can rate movies.
+* Validate that new ratings are between 1 and 5.
+* Make sure new ratings are timestamped correctly.
+* Allow for a short review with the rating.
+* Add a personal page for each user that only they can see. It should have all
+their ratings and allow them to edit or delete those ratings.
+* Add a public page for each user that has all their ratings and their
+user info.
+* Movies should have genres, and each genre should have a page where you can
+see the top rated movies for that genre.
+* Have a page both for showing movies with the most ratings and movies with the highest ratings.
+
+### Hard Mode
+
+Convert your application to use PostgreSQL.
+
+Start to exercise your own creativity here. Add features based off what you're
+interested in.
