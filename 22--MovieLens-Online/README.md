@@ -53,7 +53,12 @@ Create an interface in Django to the [MovieLens dataset][movielens].
   * [ ] Hard mode
     * [ ] Convert your application to use PostgreSQL.
     * [ ] Add features based off what you're interested in.
-
+* [ ] Night 5
+  * [ ] Normal mode
+    * [ ] Make sure all previous tasks are completed
+    * [ ] Polish up the look of the site
+  * [ ] Hard mode
+    * [ ] Spit shine
 ```
 
 
@@ -192,3 +197,15 @@ Convert your application to use PostgreSQL.
 
 Start to exercise your own creativity here. Add features based off what you're
 interested in.
+
+## Night 5
+
+### Normal mode
+
+We have a few more features we are going to add to this application. Tonight is a good time to stop and make sure you have all the previous normal modes done.
+
+Focus on polish tonight. Add in Bootstrap and customize the CSS. Organize your URLs.
+
+### Hard mode
+
+Make your site look professional - take the polish to _spit shine_ levels.
