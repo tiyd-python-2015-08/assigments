@@ -209,3 +209,16 @@ Focus on polish tonight. Add in Bootstrap and customize the CSS. Organize your U
 ### Hard mode
 
 Make your site look professional - take the polish to _spit shine_ levels.
+
+
+## Night 6
+
+### Normal mode
+
+Take your page that shows the top 20 (or however many) movies by average rating. Turn this into a paginated list using the generic class-based view (GCBV) `ListView`.
+
+Convert the rest of your views to use GCBV's.
+
+### Hard mode
+
+Add charts to your application using Matplotlib. An ideal chart -- which would require new models and caching data -- would be the average rating of a movie over time.
