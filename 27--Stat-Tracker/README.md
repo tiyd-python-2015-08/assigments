@@ -1,18 +1,3 @@
-PUT/PATCH
-
-Split POST AND PUT for /activities/{id}/stats
-
-
-PUT /activities/{activity_id}/stats/{stat_id}
-
-DELETE consistent
-
-
-Move charting to nightmare mode (mention matplotlib or D3)
-
-
-
-
 
 # Stat Tracker
 
@@ -26,17 +11,16 @@ After completing this assignment, you should be able to:
 
 * Work on a cross-discipline team
 * Build an API
-* Build a single-page UI using Angular.js
+* Build a single-page UI using AngularJS
 
 ## Details
 
 ### Deliverables
 
-* A Git repo called stat-tracker containing at least:
-  * `README.md` file explaining how to run your project
-  * a `requirements.txt` file
-  * a way to seed your application with data
-* An instance of your app running on Heroku
+* A **GitHub organization** containing **two repositories**, one for the frontend and one for the API. Every member of your team should have full access to the organization.
+* **`README.md`** file for each repository.
+* A **Django API** deployed and running on Heroku
+* An **AngularJS app** served from Firebase Hosting
 
 ### Requirements  
 
@@ -68,17 +52,17 @@ You should allow for:
 * Editing a stat
 * Showing a chart for an activity for any series of dates, defined by a start and stop date. The default should be the last 30 days.
 
-Your chart will be done with D3. We'll learn about this on Wednesday, so you will not have to build it until then.
+Your chart can be generated using a variety of libraries. We'll learn about D3 on Wednesday, so you may want to wait to build it until then, but you are welcome to use any method you'd like.
 
 Your application will be made up of an API and a JavaScript single-page app.
 
 ### API Specification
 
-For your API, I'm specifying the endpoints you'll need and what they should do. The URLs I'm using are not prefixed: yours should have `/api/` in front of them.
+For your API, we're specifying the endpoints you'll need and what they should do. The URLs below are not prefixed: yours should have `/api/` in front of them.
 
 As a team, you will need to determine the payload associated with each request/response.
 
-All the endpoints require authentication.
+All the endpoints require authentication. You will need to decide as a team if you will make authentication available via the API, and if so, what endpoints to use.
 
 Verb   | URL                                       | Action
 ------ | ---                                       | -------
@@ -93,9 +77,9 @@ DELETE | /activities/{activity_id}/stats/{stat_id} | Remove tracked data for a d
 
 ### Front-End Specification
 
-The front-end will be a single-page app using Backbone.js. The app will be served through the Python webserver, so you will have to put all your CSS and JavaScript in a directory called `/static/` and will have to make your `index.html` file as a Django template, which the Python students you're working with can help you do.
+The front-end will be a single-page app using AngularJS. The app will be served separately from the Python webserver.
 
-Registration and login can be on different pages than the main page if need be.
+Registration and login can be on different pages than the main page (even outside of the AngularJS app) if need be.
 
 ## Hard Mode
 
